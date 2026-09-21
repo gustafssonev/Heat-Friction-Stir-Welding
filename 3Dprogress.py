@@ -45,11 +45,8 @@ k = 112.0               # thermal conductivity (W/m·K) for aluminum
 T_room = 20.0           # room temperature (°C)
 T_melt = 660.0          # melting point of aluminum (°C)
 T_steel = 40.0          # temperature of steel backing (°C)
-'''h_air is 5-25, I am not sure what value to use'''
 h_air = 25              # convection coefficient for air (W/m²·K)
-'''h_steel is 500-3000, I am not sure what value to use'''
 h_steel = 1000          # convection coefficient for steel (W/m²·K)
-''' check rho and cp values'''
 rho = 2700.0            # density (kg/m³) for aluminum
 cp = 900.0              # specific heat capacity (J/kg·K) for aluminum
 eps = 1e-8              # epsilon (small value)
@@ -73,6 +70,7 @@ pin_width = 2 * Rp_raw              # pin width for visualization
 pin_left = x_center_raw - Rp_raw    # pin left boundary (x coordinate)
 pin_right = x_center_raw + Rp_raw   # pin right boundary (x coordinate)
 pin_bottom = b2 - Hp_raw            # pin bottom boundary (y coordinate)
+
 # %%
 # Dimensionless Domain
 # - To simplify training
