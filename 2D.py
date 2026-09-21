@@ -35,9 +35,7 @@ T_room = 20.0           # room temperature (°C)
 T_melt = 660.0          # melting point of aluminum (°C)
 T_steel = 80
 theta_steel = (T_steel - T_room)/525
-'''h is 5-25, I am not sure what value to use'''
 h_air = 25              # convection coefficient for air (W/m²·K) 
-'''h_steel is 500-3000, I am not sure what value to use'''
 h_steel = 1000          # convection coefficient for steel (W/m²·K) 
 ''' check rho and cp values'''
 rho = 2700.0            # density (kg/m³) for aluminum
